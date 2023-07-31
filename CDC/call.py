@@ -13,7 +13,7 @@ class AD:
     # 创建游标
     cursor = conn.cursor()
     # 准备参数
-    parameter = input("请输入企业名称：")
+    parameter = input("请输入一个企业名称：")
     # 执行存储过程
     cursor.callproc('AD', [parameter])
     # 获取存储过程的结果
